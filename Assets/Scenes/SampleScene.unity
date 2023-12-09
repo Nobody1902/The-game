@@ -201,6 +201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mass: 10
+  movementSpeed: 5000
 --- !u!61 &329805920
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -210,7 +211,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 329805918}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 2cd4036a76d9b1e40898a6e8b0c248ca, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -272,7 +273,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &329805922
 SpriteRenderer:
   m_ObjectHideFlags: 0
