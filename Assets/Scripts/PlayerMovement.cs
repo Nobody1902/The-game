@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -15,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
-
+        
     }
 
 }
