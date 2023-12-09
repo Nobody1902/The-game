@@ -181,6 +181,7 @@ GameObject:
   - component: {fileID: 329805921}
   - component: {fileID: 329805920}
   - component: {fileID: 329805919}
+  - component: {fileID: 329805924}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -200,8 +201,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d004e98b8a84b94589b8bc21f848bfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 10
-  movementSpeed: 5000
+  mass: 100
+  movementSpeed: 10
+  grounded: 0
 --- !u!61 &329805920
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -259,7 +261,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -341,6 +343,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &329805924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329805918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f85c93282dbee4ab6a63f67322f24d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 100
+  OnHeal:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDamage:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
